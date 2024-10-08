@@ -21,12 +21,26 @@
   <main>
     <section>
       <h2>About the Blog</h2>
-      <p>This blog is about data privacy and cybersecurity. The goal is to raise awareness about these critical issues and share valuable insightsr to our fellow students to be responsible digital citizens.</p>
+      <p>This blog is a collaborative project by Perpetualite students passionate about data privacy and cybersecurity. Our goal is to raise awareness about these critical issues, share valuable insights, and empower our fellow students to be responsible digital citizens.</p>
+
+      <button id="prev-button" onclick="prevPage()">Previous Page</button>
+      <button id="next-button" onclick="nextPage()">Next Page</button>
+
+      <script>
+        function prevPage() {
+          window.location.href = "wiki.html";
+        }
+
+        function nextPage() {
+          window.location.href = "index.html";
+        }
+      </script>
     </section>
   </main>
 
   <footer>
     <p>© 2023 Perpetualite Data Privacy and Cybersecurity Blog</p>
   </footer>
-</body>
+
+  </body>
 </html>
