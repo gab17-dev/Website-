@@ -26,15 +26,15 @@
       <button id="prev-button" py-click="prev_page()">Previous Page</button>
       <button id="next-button" py-click="next_page()">Next Page</button>
 
-      <py-script>
-        import js
+      <script>
+        function prevPage() {
+          window.location.href = "index.html"; 
+        }
 
-        def prev_page():
-          js.href = 'index.html' 
-
-        def next_page():
-          js.href = 'wiki.html'
-      </py-script>
+        function nextPage() {
+          window.location.href = "wiki.html";
+        }
+      </script>
     </section>
   </main>
 
