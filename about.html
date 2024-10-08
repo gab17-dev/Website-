@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Data Privacy and Cybersecurity Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="wiki.html">Wiki</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About the Blog</h2>
+      <p>This blog is a collaborative project by Perpetualite students passionate about data privacy and cybersecurity. Our goal is to raise awareness about these critical issues, share valuable insights, and empower our fellow students to be responsible digital citizens.</p>
+
+      <button id="prev-button" py-click="prev_page()">Previous Page</button>
+      <button id="next-button" py-click="next_page()">Next Page</button>
+
+      <py-script>
+        import js
+
+        def prev_page():
+          js.window.location.href = 'wiki.html'
+
+        def next_page():
+          js.window.location.href = 'index.html'
+      </py-script>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Perpetualite Data Privacy and Cybersecurity Blog</p>
+  </footer>
+
+  <script src="https://pyscript.net/alpha/pyscript.js"></script>
+</body>
+</html>
